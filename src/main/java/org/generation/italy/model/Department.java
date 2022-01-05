@@ -22,7 +22,7 @@ public class Department {
 	
 	private String name;
 	private String address;
-	private Integer phone;
+	private String phone;
 	private String email;
 	private String website;
 	@Column(name="head_of_department")
@@ -47,10 +47,10 @@ public class Department {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public Integer getPhone() {
+	public String getPhone() {
 		return phone;
 	}
-	public void setPhone(Integer phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 	public String getEmail() {

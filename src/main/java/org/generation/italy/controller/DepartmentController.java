@@ -28,6 +28,7 @@ public class DepartmentController {
 		Department dep = repository.getById(id);
 		
 		model.addAttribute("department", dep);
+		model.addAttribute("degrees", dep.getDegrees());
 
 		return "detail";
 	}

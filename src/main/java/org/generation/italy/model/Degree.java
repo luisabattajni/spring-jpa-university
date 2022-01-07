@@ -1,13 +1,10 @@
 package org.generation.italy.model;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
+import javax.persistence.Entity;import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+//import javax.persistence.JoinColumn;
 import javax.persistence.Table;
 
 @Entity
@@ -27,9 +24,7 @@ public class Degree {
 	private String email;
 	private String website;
 	
-	@ManyToOne (fetch=FetchType.EAGER)
-	@JoinColumn(name="department_id")
-	private Department department;
+	
 	
 	//get set
 	
@@ -82,15 +77,11 @@ public class Degree {
 		this.website = website;
 	}
 
-	public Department getDepartment() {
-		return department;
-	}
 
-	public void setDepartment(Department department) {
-		this.department = department;
-	}
 	
-
+	//prova
+	
+	
 	
 	
 	

@@ -10,7 +10,6 @@
 			<hr/>
 			 <!-- name level address email website (stringhe) + department_id -->
 		<table class="table">
-		<!-- name address phone email website head_of_department -->
 		<thead>
 			<tr>
 				<th scope="col">Name</th>
@@ -23,11 +22,11 @@
 		</thead>
 		<tbody>
 			<tr th:each="degree : ${degrees}">
-				<td class="table-primary" th:text="${department.name}"></td>
-				<td th:text="${department.level}"></td>
-				<td class="table-primary" th:text="${department.address}"></td>		
-				<td th:text="${department.email}"></td>
-				<td class="table-primary" th:text="${department.website}"></td>
+				<td class="table-primary" th:text="${degree.name}"></td>
+				<td th:text="${degree.level}"></td>
+				<td class="table-primary" th:text="${degree.address}"></td>		
+				<td th:text="${degree.email}"></td>
+				<td class="table-primary" th:text="${degree.website}"></td>
 			</tr>
 		</tbody >
 	</table>

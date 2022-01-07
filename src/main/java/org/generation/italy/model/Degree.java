@@ -4,7 +4,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-//import javax.persistence.JoinColumn;
 import javax.persistence.Table;
 
 @Entity
@@ -16,8 +15,6 @@ public class Degree {
 	@Column(name="id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	
-	// name level address email website (stringhe) + department_id
 	private String name;
 	private String level;
 	private String address;
@@ -78,9 +75,6 @@ public class Degree {
 	}
 
 
-	
-	//prova
-	
 	
 	
 	
